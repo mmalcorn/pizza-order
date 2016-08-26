@@ -1,0 +1,17 @@
+#pizza-size {
+  padding-bottom: 20%;
+}
+#toppings {
+  padding-bottom: 20%;
+}
+#button {
+  background-color: orange;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 25%;
+}
+
+h1 {
+  float: center;
+  padding-left: 37%;
+}

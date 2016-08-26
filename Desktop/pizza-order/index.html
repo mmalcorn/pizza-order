@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+    <meta charset="utf-8">
+    <title>Brick Oven Pizza Dungeon</title>
+  <body>
+    <div class="container">
+      <h1>Make Ah Pizzah Pie</h1>
+    <form id="pizza-order">
+      <div class="radio">
+        <h3>Choose your size:</h3>
+        <br></br>
+      <label>
+        <input type="radio" name="pizza-size" value="small" checked>
+        Small
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="pizza-size" value="medium">
+        Medium
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="size" value="large">
+        Large
+      </label>
+        <br></br>
+    </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Choose your toppings:</h3>
+          <br></br>
+          <input class="topping" input type="checkbox" name="topping" value="chicken">Chicken<br>
+          <input class="topping" input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+          <input class="topping" input type="checkbox" name="topping" value="sausage">Sausage<br>
+          <input class="topping" input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
+      </div>
+    </div>
+
+        <br></br>
+
+      <!-- <div class="row">
+      TODO: Resize these images! tried to use classes/IDs for each image & reference it in styles.css, but no luck yet
+      <img src="imgs/pepperoni.JPG" class="imgs">
+      <img src="imgs/chicken.jpg" class="imgs">
+      <img src="imgs/ham.jpg" class="imgs">
+      <img src="imgs/sausage.JPG" class="imgs">
+      <img src="imgs/mushrooms.jpg" class="imgs">
+      <img src="imgs/greenpeppers.jpg" class="imgs">
+      </div> -->
+
+    <button type="submit" class="btn btn-warning" id="button">Place your order!</button>
+
+    <div>
+      <p><!--Display Total Here by using "show" and "hide"--></p>
+    </div>
+    </form>
+
+  </body>
+</html>
+
+<!--Thoughts:
+*Create a "for" loop to cycle through the pizza toppings.  Possibly for the size, too.
+Radio buttons for the Size - Small, Medium, or large
