@@ -1,11 +1,20 @@
 $(document).ready(function(){
   $("#ping-pong").submit(function(){
   event.preventDefault();
-  var userNumber = $("#userNumber").val();
   var numberArray = [];
-  var start = 0;
-
+  var userNumber = $("#userNumber").val();
   numberArray.push($("#userNumber").val());
+
+
+
+  var pingPong = function(userInput) {
+      if (userInput < 1 ){
+        alert("Enter a number above 0")
+      }
+
+  }
+
+
   if(numberArray % 15 === 0){
     numberArray.push("pingpong")
   }
@@ -17,16 +26,14 @@ $(document).ready(function(){
   }
   (console.log(numberArray))
 
+})
+
 
 
 
 
 
 //TODO: Numbers need to show in an unordered list.  Right now they display right next to each other.
-$("#show-numbers").append(numberArray);
 
 
-
-
-})
   });
