@@ -14,36 +14,39 @@
     <div class="container">
       <h1>Make Ah Pizzah Pie</h1>
     <form id="pizza-order">
-      <div class="radio">
         <h3>Choose your size:</h3>
         <br></br>
-      <label>
-        <input type="radio" name="pizza-size" value="small" checked>
-        Small
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="pizza-size" value="medium">
-        Medium
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="size" value="large">
-        Large
-      </label>
-        <br></br>
-    </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="pizza-size" value="small">
+          Small
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="pizza-size" value="medium">
+          Medium
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="pizza-size" value="large">
+          Large
+        </label>
+          <br></br>
+      </div>
 
       <div class="row">
         <div class="col-md-12">
           <h3>Choose your toppings:</h3>
           <br></br>
-          <input class="topping" input type="checkbox" name="topping" value="chicken">Chicken<br>
-          <input class="topping" input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-          <input class="topping" input type="checkbox" name="topping" value="sausage">Sausage<br>
-          <input class="topping" input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="topping" value="chicken">Chicken<br>
+          <input type="checkbox" name="topping" value="ham">Ham<br>
+          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="topping" value="sausage">Sausage<br>
+          <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="topping" value="black-olives">Black Olives<br>
+          <input type="checkbox" name="topping" value="pineapple">Pineapples<br>
       </div>
     </div>
 
@@ -62,7 +65,7 @@
     <button type="submit" class="btn btn-warning" id="button">Place your order!</button>
 
     <div>
-      <p><!--Display Total Here by using "show" and "hide"--></p>
+      <ul id="pizzaPrice"><!--Display Total Here by using "show" and "hide"--></p>
     </div>
     </form>
 

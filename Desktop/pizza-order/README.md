@@ -1,32 +1,47 @@
 Specs
 
-1.  User selects a pizza size- either small, medium, or large.
+1.  User selects a pizza size- either small, medium, or large.  It is assumed that the pizza will be a cheese pizza.  Depending on what size is selected, a total will be generated:
 
-    input: medium
-    output: medium
+    input: small cheese
+    output: 9.00
 
-2.  Depending on what size a user selects, a temporary pizza total will be generated.
+    input: medium cheese
+    output: 11.00
 
-    input: medium
-    output: 11.00 (temporary pizza total)
+    input: large cheese
+    output: 13.00
 
-3.  User can select from six pizza toppings, a value (price) will be assigned to each topping depending on the topping.
-    input: pepperoni (any meat)
-    output: Add 2.00
+2.  User can select from one of six pizza toppings, and a value will be assigned to each topping.  Depending on the pizza size selected, and topping selected, the total will change:
 
-    input: green peppers (any vegetable)
-    output: Add 1.00
+    input: small, pepperoni
+    output: 11.00
 
-4. The temporary pizza total will change depending on what topping is selected.  The values assigned to each topping will be added to the temporary pizza total.
+    input: small, green pepper
+    output: 10.00
 
-    input: medium; green peppers
-    output: 11.00 + 1.00
-
-5.  Multiple toppings will change the temporary total even more.
-    input: medium; pepperoni and green peppers
-    output: 11.00 (size) + 2.00 (meat) + 1.00 (vegetable) = 14.00
-
-6.  A grand total will be generated and displayed based off of the size, number, and value of the toppings.
-
-    input: large (size) + chicken (meat) + mushrooms (vegetable)
+    input: large, pepperoni
     output: 15.00
+
+    input: large, green pepper
+    output: 14.00
+
+3.  User can select two toppings on the same pizza.  Depending on the size selected, and the two toppings selected, the total increases:
+
+    input: small, pepperoni, sausage
+    output: 13.00
+
+    input: small, green pepper, mushroom
+    output: 11.00
+
+4.  User can select more than two toppings.  Depending on the size selected, and how many toppings are selected for the pizza, the total increases:
+
+    input: small, pepperoni, sausage, ham
+    output: 15.00
+
+    input: small, green pepper, mushroom, black olives
+    output: 12.00
+
+5.  User can mix toppings to be both meat and vegetables.  Based off of the size that is selected, and the combination of toppings, the total changes:
+
+  input: small, pepperoni, ham, green peppers
+  output: 14.00
